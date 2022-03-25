@@ -1,0 +1,22 @@
+<svg id="Componente_926_3" data-name="Componente 926 – 3" xmlns="http://www.w3.org/2000/svg" width="84" height="85" viewBox="0 0 84 85">
+  <ellipse id="Elipse_1190" data-name="Elipse 1190" cx="41.5" cy="42" rx="41.5" ry="42" transform="translate(0 0)" fill="#fff"/>
+  <g id="Componente_930_1" data-name="Componente 930 – 1" transform="translate(6 6)">
+    <g id="Grupo_20724" data-name="Grupo 20724">
+      <g id="Grupo_20505" data-name="Grupo 20505">
+        <ellipse id="Elipse_570" data-name="Elipse 570" cx="36" cy="36.5" rx="36" ry="36.5" transform="translate(0 -0.001)" fill="#fed940"/>
+      </g>
+    </g>
+    <g id="Grupo_20725" data-name="Grupo 20725" transform="translate(32.397)">
+      <g id="Grupo_20507" data-name="Grupo 20507">
+        <path id="Trazado_23135" data-name="Trazado 23135" d="M295.461,112.445c0,20.086-17.668,36.369-39.462,36.369V76.076C277.793,76.076,295.461,92.359,295.461,112.445Z" transform="translate(-255.999 -76.076)" fill="#ffc024"/>
+      </g>
+    </g>
+    <g id="Grupo_20726" data-name="Grupo 20726" transform="translate(16.009 15.926)">
+      <ellipse id="Elipse_571" data-name="Elipse 571" cx="6.283" cy="6.359" rx="6.283" ry="6.359" fill="#7f6866"/>
+    </g>
+    <g id="Grupo_20727" data-name="Grupo 20727" transform="translate(43.289 15.926)">
+      <ellipse id="Elipse_572" data-name="Elipse 572" cx="6.283" cy="6.359" rx="6.283" ry="6.359" fill="#634c4c"/>
+    </g>
+    <path id="Trazado_23328" data-name="Trazado 23328" d="M16.756,16.96A16.878,16.878,0,0,1,0,0H5.571A11.186,11.186,0,1,0,27.942,0h5.571A16.878,16.878,0,0,1,16.756,16.96Z" transform="translate(52.685 52.47) rotate(180)" fill="#7f6866"/>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/static/Montserrat-Bold.ttf') format('truetype');
+    /* font-style: normal;
+    font-weight: normal; */
+  }
+  
+  
+  
+  .content-nps {
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #f6f6fb;
+      overflow: hidden;
+  }
+  
+  .nav-log{
+      background-image: radial-gradient(circle at 50% -20.71%, #fe8f62 0, #ff8564 8.33%, #ff7967 16.67%, #ff6c6b 25%, #fd5e6e 33.33%, #f84e73 41.67%, #f23c78 50%, #ea287e 58.33%, #e10e86 66.67%, #d6008f 75%, #ca0098 83.33%, #bb00a3 91.67%, #aa00ae 100%);
+      border-top-left-radius: 25px !important;
+      border-bottom: 1px solid #ffffff;
+  }
+  
+  .content-dashboard{
+  
+      box-shadow: 0 2px 12px 7px #cfcece;
+      border-radius: 25px;
+  }
+  
+  .items-menu{
+      background-color: #000000;
+  }
+  
+  .radio-end-list{
+      border-bottom-left-radius: 25px;
+  }
+  
+  
+  .custom-cards{
+      border-radius: 25px !important;
+  }
+  
+  .nav-custom{
+      position: fixed;
+      width: 210px;
+      /* top: 20px; */
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+      width: 7px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgb(180, 179, 179); 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgb(180, 179, 179);
+    }
+  
+.form-select{
+    border-radius: 18px !important
+}
+  
+.nps-general{
+    background-image: radial-gradient(circle at 50% -20.71%, #d1fff8 0, #befff6 10%, #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
+}
+  
+.promoters{
+    background-image: radial-gradient(circle at 50% -20.71%, #fff358 0, #fff64c 7.14%, #fff841 14.29%, #fbf939 21.43%, #e0f934 28.57%, #c2f832 35.71%, #a1f535 42.86%, #79f23c 50%, #3fee46 57.14%, #00ea54 64.29%, #00e663 71.43%, #00e375 78.57%, #00df88 85.71%, #00dc9c 92.86%, #00d9b1 100%);
+}
+  
+.neutrales{
+    background-image: radial-gradient(circle at 50% -20.71%, #e6f58f 0, #e9eb7f 10%, #ecdf6e 20%, #efd25d 30%, #f1c44d 40%, #f2b53c 50%, #f3a52d 60%, #f59522 70%, #f8851d 80%, #fa741e 90%, #fc6324 100%);
+}
+  
+.detractors{
+    background-image: radial-gradient(circle at 25.82% 116.45%, #f346e2 0, #e142e8 16.67%, #cd3eed 33.33%, #b53cf2 50%, #993cf7 66.67%, #773efc 83.33%, #4541ff 100%);
+}
+
+.active-item{
+    background-image: radial-gradient(circle at 50% -20.71%, #fe8f62 0, #ff8564 8.33%, #ff7967 16.67%, #ff6c6b 25%, #fd5e6e 33.33%, #f84e73 41.67%, #f23c78 50%, #ea287e 58.33%, #e10e86 66.67%, #d6008f 75%, #ca0098 83.33%, #bb00a3 91.67%, #aa00ae 100%);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}

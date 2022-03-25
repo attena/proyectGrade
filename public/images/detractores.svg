@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Grupo_22126" data-name="Grupo 22126" transform="translate(0.5 0.5)">
+    <path id="Trazado_23204" data-name="Trazado 23204" d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm0,22.957A10.957,10.957,0,1,1,22.957,12,10.969,10.969,0,0,1,12,22.957Z" transform="translate(0 0)" fill="#fd7752" stroke="#fd7752" stroke-width="1"/>
+    <path id="Trazado_23205" data-name="Trazado 23205" d="M99.292,129.646a1.646,1.646,0,1,0-1.646,1.646A1.648,1.648,0,0,0,99.292,129.646Zm-2.195,0a.549.549,0,1,1,.549.549A.55.55,0,0,1,97.1,129.646Z" transform="translate(-89.788 -119.717)" fill="#fd7752" stroke="#fd7752" stroke-width="1"/>
+    <path id="Trazado_23206" data-name="Trazado 23206" d="M225.646,128a1.646,1.646,0,1,0,1.646,1.646A1.648,1.648,0,0,0,225.646,128Zm0,2.195a.549.549,0,1,1,.549-.549A.549.549,0,0,1,225.646,130.195Z" transform="translate(-209.505 -119.717)" fill="#fd7752" stroke="#fd7752" stroke-width="1"/>
+    <path id="Trazado_23207" data-name="Trazado 23207" d="M109.49,224a7.179,7.179,0,0,0-5.347,2.378.549.549,0,1,0,.818.732,6.1,6.1,0,0,1,9.059,0,.549.549,0,1,0,.818-.732A7.18,7.18,0,0,0,109.49,224Z" transform="translate(-97.49 -209.505)" fill="#fd7752" stroke="#fd7752" stroke-width="1"/>
+  </g>
+</svg>

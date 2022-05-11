@@ -19,28 +19,32 @@ use App\Http\Controllers\ReportsController;
 
 Route::get('/', function () {
     return view('Dashboard.index');
-})->name("dashboard");
+})->middleware(['auth'])->name("dashboard");
 
 
 Route::get('/create', function () {
     return view('Dashboard.create');
-})->name("create");
+})->middleware(['auth'])->name("create");
 
 Route::get('/list', function () {
     return view('Dashboard.listPoll');
-})->name("list");
+})->middleware(['auth'])->name("list");
 
 Route::get('/modify/{id}', function () {
     return view('Dashboard.modify');
-})->name("poll");
+})->middleware(['auth'])->name("poll");
 
 Route::get('/send', function () {
     return view('Dashboard.send');
-})->name("send");
+})->middleware(['auth'])->name("send");
 
 Route::get('/poll/{id}', function () {
     return view('Poll.index');
-})->name("poll");
+})->middleware(['auth'])->name("poll");
+
+Route::get('/panel', function () {
+    return view('Dashboard.panel');
+})->middleware(['auth'])->name("panel");
 
 
 
@@ -52,4 +56,6 @@ Route::prefix("api")->group(function () {
 });
 
 
+Auth::routes();
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

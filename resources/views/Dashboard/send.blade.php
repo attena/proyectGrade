@@ -2,14 +2,15 @@
 
 @section('content')
 
-<div class="alert alert-success alert-dismissible fade show d-none save-poll" role="alert">
-    ¡Encuesta creada correctamente!
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
+<div class="alert alert-success alert-dismissible fade show d-none send-poll mt-4 " role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+    </svg>
+    ¡Encuesta enviada correctamente!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 
-<div class="alert alert-danger alert-dismissible fade show d-none fail-poll" role="alert">
+<div class="alert alert-danger alert-dismissible fade show d-none fail-send" role="alert">
     ¡No se pudo enviar la encuesta!
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
@@ -18,7 +19,7 @@
 
 <div class="row mb-2">
     <div class="col-lg-12">
-        <h4 class="text-left">Encuestas creadas</h4>
+        <h4 class="text-left">Configuración de envios</h4>
     </div>
 </div>
 
@@ -32,11 +33,6 @@
         <div class="icon-box edit-icon shadow border-0 mb-2" style="border-radius: 12px">
         </div>
         <span data-mobil="Encuesta" class="nav-pulso" data-desk="Selecciona encuesta"></span>
-    </div>
-    <div class="d-flex flex-column align-items-center plan-step plan-step-p3" data-next="3" style="width: 70px">
-        <span class="icon-box checkbox-icon shadow border-0 mb-2" style="border-radius: 12px">
-        </span>
-        <span data-mobil="Envío" class="nav-pulso" data-desk="Configura envío"></span>
     </div>
     <div class="d-flex flex-column align-items-center plan-step plan-step-p4" data-next="4" style="width: 70px">
         <span class="icon-box result-icon shadow border-0 mb-2" style="border-radius: 12px">
@@ -54,7 +50,7 @@
 
     <div class="row mt-4">
         <div class="col-lg-12 text-end">
-            <button class="btn btn-primary rounded-pill btn-firts">Siguiente</button>
+            <button class="btn btn-outline-primary rounded-pill btn-question-custom text-white btn-firts" disabled>Siguiente</button>
         </div>
     </div>
 
@@ -65,7 +61,7 @@
         <div class="card-body">
             <div class="form-group">
                 <label for="categorie">Selecciona un archivo excel con la lista correos</label>
-                <input type="file" name="icon" class="form-control mt-2 custom-input ignore" placeholder="Cargar icono">
+                <input type="file" name="emails" class="form-control mt-2 custom-input ignore" placeholder="Cargar icono">
 
             </div>
         </div>
@@ -82,7 +78,7 @@
                 </svg> <strong>Regresar</strong> </button>
         </div>
         <div class="col-lg-6 text-end">
-            <button class="btn btn-primary rounded-pill btn-second">Siguiente</button>
+            <button class="btn btn-outline-primary rounded-pill btn-question-custom text-white btn-second" disabled>Siguiente</button>
         </div>
     </div>
 
@@ -92,52 +88,22 @@
         </div>
         <div class="card-body">
             <table class="responsive table">
-                <tbody>
-                    @for ($i = 0; $i < 4; $i++) <tr class="text-muted">
-                        <td class="name-poll">Encuesta {{$i}}</td>
-                        <td>04/10/2021</td>
-                        <td><input type="checkbox" data-name="encuesta" name="encuesta-list" value="20"></td>
-                        </tr>
-                        @endfor
+                <thead class="text-muted">
+                    <th>Nombre de la encuesta</th>
+                    <th>Preguntas</th>
+                    <th>Fecha creación</th>
+                    <th>Seleccionar</i></th>
+                </thead>
+                <tbody class="add-list-polls">
+                    <tr class="border-0 hiden-tr">
+                        <td colspan="4" align="center" class="border-0">
+                            <div class="spinner-border text-primary" role="status">
+                            </div>
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
-        </div>
-    </div>
-</div>
-
-<div class="three-step mt-3 d-none">
-
-    <div class="row mt-4">
-        <div class="col-lg-6 ">
-            <button class="btn back-three"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
-                </svg> <strong>Regresar</strong> </button>
-        </div>
-        <div class="col-lg-6 text-end">
-            <button class="btn btn-primary rounded-pill btn-three">Siguiente</button>
-        </div>
-    </div>
-
-    <div class="card border-0 shadow mt-3" style="border-radius: 25px;">
-        <div class="card-header card-send border-0" style="color: #fff; border-radius: 25px 25px 0 0">
-            Selecciona las disponibilidad
-        </div>
-        <div class="card-body pt-5">
-            <div class="row">
-                <div class="form-group col-lg-4">
-                    <input type="text" class="form-control custom-input" name="name-poll" placeholder="Nombre">
-                    <label for="">Nombre envio</label>
-                </div>
-                <div class="form-group col-lg-4 px-1">
-                    <input type="datetime-local" name="dateInit-poll" class="form-control custom-input">
-                    <label for="">Fecha de inicio</label>
-                </div>
-                <div class="form-group col-lg-4 px-1">
-
-                    <input type="datetime-local" name="dateFinish-poll" class="form-control custom-input">
-                    <label for="">Fecha de cierre</label>
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -152,7 +118,7 @@
                 </svg> <strong>Regresar</strong> </button>
         </div>
         <div class="col-lg-6 text-end">
-            <button class="btn btn-primary rounded-pill btn-final-poll">Enviar encuesta</button>
+            <button class="btn btn-outline-primary rounded-pill btn-question-custom text-white btn-final-poll">Enviar encuesta</button>
         </div>
     </div>
 
@@ -161,30 +127,21 @@
             Previsualización
         </div>
         <div class="card-body pt-5">
-            <div class="row">
-                <div class="col-lg-6"> <strong>Nombre encuesta</strong> </div>
-                <div class="col-lg-3"><strong>Fecha inicio</strong> </div>
-                <div class="col-lg-3"><strong>Fecha cierre</strong> </div>
-            </div>
-            <div class="row border p-2 mb-3" style="border-radius: 15px;">
-                <div class="col-lg-6 pulse-name">Lorem ipsum dolor sit amet</div>
-                <div class="col-lg-3 date-init">10/04/21</div>
-                <div class="col-lg-3 date-end">10/04/21</div>
-            </div>
 
             <div class="row">
-                <div class="col-lg-6"><strong>Correos seleccionados</strong> </div>
-            </div>
-            <div class="row border p-2 mb-3" style="border-radius: 15px;">
-                <div class="col-lg-6 sample-name"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-6" ><strong>Encuesta seleccionada</strong> </div>
+                <div class="col-lg-6"><strong>Encuesta seleccionada</strong> </div>
             </div>
             <div class="row border p-2" style="border-radius: 15px;">
-                <div class="col-lg-6 poll-name">Lorem ipsum dolor sit amet</div>
+                <div class="col-lg-6 poll-name">---</div>
             </div>
+
+            <div class="row">
+                <div class="col-lg-6"><strong>Archivo seleccionado</strong> </div>
+            </div>
+            <div class="row border p-2 mb-3" style="border-radius: 15px;">
+                <div class="col-lg-6 file-mails">---</div>
+            </div>
+
         </div>
     </div>
 </div>

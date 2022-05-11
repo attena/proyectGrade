@@ -38,7 +38,6 @@ $(function () {
             "/images/icon-range-" + $(this).val() + ".svg"
         );
         $(".range-value").html($(this).val());
-        questionVal = $(this).val();
     });
 
     $('.btn-redirect').on('click', function () {
@@ -223,7 +222,7 @@ function listPolls(data) {
             + '<td>' + data[1][index].name + '</td>'
             + '<td>' + element.total + '</td>'
             + '<td>' + data[1][index].date + '</td>'
-            + '<td><input type="checkbox" name="polls-list" value="' + element.idPolls + '"></td>'
+            + '<td><input type="checkbox" name="polls-list" data-name="'+data[1][index].name+'" value="' + element.idPolls + '"></td>'
             + '</tr>')
     });
 }

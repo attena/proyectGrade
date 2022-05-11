@@ -24,7 +24,7 @@ class PollController extends Controller
                 DB::raw('count(poll_questions.idQuestion) as total')
             )->get();
 
-        $getPollsName = Poll::get(['name', 'date']);
+        $getPollsName = Poll::get(['name', 'date','idPolls']);
 
         return response()->json(array($getPolls, $getPollsName), 200);
     }

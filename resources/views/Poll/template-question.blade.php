@@ -5,8 +5,7 @@
     <div class="col-lg-10 shadow px-4 m-auto custom-card-question" style="border-radius: 25px;">
         <h3 class="mt-5 pt-5 text-center">
             <strong>
-                @{{ pollquestions.statement }}
-                Pregunta 1 .....
+                @{{ question }}
             </strong>
         </h3>
         <div class="col-lg-6 m-auto  mt-4 mb-3">
@@ -44,8 +43,7 @@
             <div class="col-lg-12 mb-3 text-center">
                 <h3>
                     <strong>
-                            @{{ pollquestions.statement_en }}
-                            Pregunta 2 .....
+                        @{{ question }}
                     </strong>
                 </h3>
             </div>
@@ -88,8 +86,7 @@
                 <div class="col-lg-12 mt-5 text-center">
                     <h4>
                         <strong>
-                            @{{ pollquestions.statement }}
-                            Pregunta 3 ....
+                            @{{ question }}
                         </strong>
                     </h4>
                 </div>
@@ -145,8 +142,7 @@
                 <div class="col-lg-12 mt-5 text-center">
                     <h4>
                         <strong>
-                            @{{ pollquestions.statement }}
-                            Pregunta 4 ....
+                            @{{ question }}
                         </strong>
                     </h4>
                 </div>
@@ -162,6 +158,30 @@
                 <strong>Siguiente</strong> 
             </button>
         </div>
+    </div>
+
+</script>
+
+<!-- finish -->
+<script id="npsQuestionT5Template" type="text/x-handlebars-template">
+    
+    <div class="col-lg-10 shadow px-4 m-auto custom-card-question" style="border-radius: 25px;">
+        <div class="type4">
+            <div class="row">
+                <div class="col-lg-12 mt-5 text-center mb-5">
+                    <h4 class="title-question">
+                        <strong>
+                            ¡Gracias por por ayudarnos a mejorar, <br>
+                            hemos finalizado la encuesta!
+                        </strong>
+                    </h4>
+                    <br>
+                    <img src="/images/emoji-5.svg" alt="Enojado" data-toggle="tooltip" data-placement="top" title="Satisfecho">
+                </div>
+                
+            </div>
+        </div>
+
     </div>
 
 </script>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\PollQuestions;
 use App\Models\Feelings;
 use App\Models\QuestionResponse;
+use Carbon\Carbon;
 
 
 class PollClientController extends Controller
@@ -15,7 +16,8 @@ class PollClientController extends Controller
     {   
         Feelings::insert([
             'idPolls' => $request['idPoll'],
-            'response' => $request['feeling']
+            'response' => $request['feeling'],
+            'date'=> Carbon::now()->toDateString()
         ]);
 
         foreach ($request['questions'] as  $value) {
@@ -24,7 +26,8 @@ class PollClientController extends Controller
                 [
                     'idPolls' => $request['idPoll'],
                     'idQuestions' => $value['id'],
-                    'response' => $value['response']
+                    'response' => $value['response'],
+                    'date' => Carbon::now()->toDateString()
                 ]
             );
         }

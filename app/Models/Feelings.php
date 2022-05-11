@@ -10,7 +10,8 @@ class Feelings extends Model
     protected $table = 'feelings';
     protected $fillable = [
         'idPolls',
-        'response'
+        'response',
+        'date'
     ];
     protected $primaryKey = 'idFeelings';
 }
